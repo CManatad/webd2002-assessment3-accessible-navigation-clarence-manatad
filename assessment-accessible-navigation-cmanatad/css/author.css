@@ -1,0 +1,25 @@
+/* ===================================================================================
+   Pigment & Co - Accessible Navigation
+   WEBD2002 Accessible Web Design | author.css
+
+   Name: 
+   Github Username:
+  
+   Add your accessibility styles here.
+   This file is loaded after styles.css, so your rules will override or extend the base 
+   styles as needed.
+
+   hint: the colours for the navigation/site are in the base styles - have a look there 
+   and incorporate them
+   
+
+   ===================================================================================== */
+
+   /** just so you can see the items - this will need to changed **/
+   header,
+   header svg  {
+      color: #efefef; 
+   }
+   .chevron {
+      fill: #efefef;
+   }

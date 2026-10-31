@@ -37,97 +37,57 @@
 
       <!-- Main navigation starts here -->
 
-
-      <!-- Paints -->
-      Paints
-      <svg class="chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke-width="2.5"
-        stroke-linecap="round" stroke-linejoin="round">
-        <polyline points="6 9 12 15 18 9" />
-      </svg>
-
-      Oil Paints
-      Acrylic Paints
-      <svg class="chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke-width="2.5"
-        stroke-linecap="round" stroke-linejoin="round">
-        <polyline points="6 9 12 15 18 9" />
-      </svg>
-
-
-      Heavy Body Acrylics
-      Soft Body Acrylics
-      Fluid Acrylics
-      Acrylic Gouache
-      Open Slow-Dry Acrylics
-
-      Watercolours
-      Gouache
-      Inks &amp; Drawing Inks
-      Spray Paints
-      Mediums &amp; Additives
-      Gesso &amp; Grounds
-
-      <!-- Drawing -->
-
-      Drawing
-      <svg class="chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke-width="2.5"
-        stroke-linecap="round" stroke-linejoin="round">
-        <polyline points="6 9 12 15 18 9" />
-      </svg>
-
-
-      Pencils
-      Charcoal
-      Pastels
-
-      Pens &amp; Markers
-      <svg class="chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke-width="2.5"
-        stroke-linecap="round" stroke-linejoin="round">
-        <polyline points="6 9 12 15 18 9" />
-      </svg>
-
-        Fine Liners
-        Brush Pens
-        Alcohol Markers
-        Calligraphy Pens
-        Gel Pens
-
-      Sketchbooks
-      Erasers &amp; Sharpeners
-
-      <!-- Surfaces -->
-      Surfaces
-
-
-      <!-- Tools -->
-      Tools
-      <svg class="chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke-width="2.5"
-        stroke-linecap="round" stroke-linejoin="round">
-        <polyline points="6 9 12 15 18 9" />
-      </svg>
-
-
-      Brushes
-      <svg class="chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke-width="2.5"
-        stroke-linecap="round" stroke-linejoin="round">
-        <polyline points="6 9 12 15 18 9" />
-      </svg>
-
-        Oil &amp; Acrylic Brushes
-        Watercolour Brushes
-        Fan Brushes
-        Detail Brushes
-        Brush Sets
-
-      Palette Knives
-      Easels
-      Palettes
-      Drawing Boards &amp; Rulers
-      Varnishes &amp; Finishes
-
-      Studio
-      
-      Sale
-
+      <nav id="primary-nav" class="primary-nav" aria-label="Primary">
+        <!-- Paints -->
+         <ul class="nav-list">
+            <li>
+              <button type="button" class="button-trigger" id="paint-trigger" 
+                aria-expanded="false" aria-controls="paint-menu">Paint</button>
+                <svg class="chevron" width="24" height="24" aria-hidden="true" focusable="false" viewBox="0 0 640 640">
+                <path d="M297.4 470.6C309.9 483.1 330.2 483.1 342.7 470.6L534.7 278.6C547.2 266.1 547.2 245.8 534.7 233.3C522.2 220.8 501.9 220.8 489.4 233.3L320 402.7L150.6 233.4C138.1 220.9 117.8 220.9 105.3 233.4C92.8 245.9 92.8 266.2 105.3 278.7L297.3 470.7z"/>
+                </svg>
+            </li>
+              <ul id="paint-menu" class="sub-menu" hidden>
+                <li><a href="#">Oil Paints</a></li>
+                <li><button type="button" class="button-trigger" id="acrylic-trigger"
+                  aria-expanded="false" aria-controls="acrylic-menu">Acrylic Paints</button>
+                  <svg class="chevron" width="24" height="24" aria-hidden="true" focusable="false" viewBox="0 0 640 640">
+                  <path d="M297.4 470.6C309.9 483.1 330.2 483.1 342.7 470.6L534.7 278.6C547.2 266.1 547.2 245.8 534.7 233.3C522.2 220.8 501.9 220.8 489.4 233.3L320 402.7L150.6 233.4C138.1 220.9 117.8 220.9 105.3 233.4C92.8 245.9 92.8 266.2 105.3 278.7L297.3 470.7z"/>
+                  </svg>
+                  <ul id="acrylic-menu" class="sub-menu" hidden>
+                    <li><a href="#">Heavy Body Acrylics</a></li>
+                    <li><a href="#">Soft Body Acrylics</a></li>
+                    <li><a href="#">Fluid Acrylics</a></li>
+                    <li><a href="#">Acrylic Gouache</a></li>
+                    <li><a href="#">Open Slow-Dry Acrylics</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Gouache</a></li>
+                <li><a href="#">Inks & Drawing Inks</a></li>
+                <li><a href="#">Spray Paints</a></li>
+                <li><a href="#">Mediums & Additives</a></li>
+                <li><a href="#">Gesso & Grounds</a></li>
+              </ul>
+            </li>
+            <li>
+              <button type="button" class="button-trigger" id="drawing-button" 
+                aria-expanded="false" aria-controls="drawing-menu">Drawing</button>
+                <svg class="chevron" width="24" height="24" aria-hidden="true" focusable="false" viewBox="0 0 640 640">
+                <path d="M297.4 470.6C309.9 483.1 330.2 483.1 342.7 470.6L534.7 278.6C547.2 266.1 547.2 245.8 534.7 233.3C522.2 220.8 501.9 220.8 489.4 233.3L320 402.7L150.6 233.4C138.1 220.9 117.8 220.9 105.3 233.4C92.8 245.9 92.8 266.2 105.3 278.7L297.3 470.7z"/>
+                </svg>
+            </li>
+            <li><a href="#">Surfaces</a></li>
+            <li>
+              <button type="button" class="button-trigger" id="tool-button" 
+                aria-expanded="false" aria-controls="tool-menu">Tools</button>
+                <svg class="chevron" width="24" height="24" aria-hidden="true" focusable="false" viewBox="0 0 640 640">
+                <path d="M297.4 470.6C309.9 483.1 330.2 483.1 342.7 470.6L534.7 278.6C547.2 266.1 547.2 245.8 534.7 233.3C522.2 220.8 501.9 220.8 489.4 233.3L320 402.7L150.6 233.4C138.1 220.9 117.8 220.9 105.3 233.4C92.8 245.9 92.8 266.2 105.3 278.7L297.3 470.7z"/>
+                </svg>
+            </li>
+            <li><a href="#">Studio</a></li>
+            <li><a href="#">Sale</a></li>
+         </ul>
+      </nav>
       <!-- Nav actions: cart, search, hamburger -->
       <div class="nav-actions">
 
